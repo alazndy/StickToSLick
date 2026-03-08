@@ -1,6 +1,6 @@
-﻿{
-  "parent": "minecraft:item/handheld",
+{
+  "parent": "item/handheld",
   "textures": {
-    "layer0": "minecraft:item/trident"
+    "layer0": "sticktoslick:item/weapon_winged_lance"
   }
 }

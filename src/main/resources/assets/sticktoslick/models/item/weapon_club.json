@@ -1,3 +1,6 @@
-﻿{
-  "parent": "minecraft:block/oak_log"
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "sticktoslick:item/weapon_club"
+  }
 }

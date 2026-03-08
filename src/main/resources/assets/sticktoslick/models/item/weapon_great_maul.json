@@ -1,3 +1,6 @@
-﻿{
-  "parent": "minecraft:block/iron_block"
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "sticktoslick:item/weapon_great_maul"
+  }
 }

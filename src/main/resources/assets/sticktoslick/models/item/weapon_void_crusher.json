@@ -1,3 +1,6 @@
-﻿{
-  "parent": "minecraft:block/obsidian"
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "sticktoslick:item/weapon_void_crusher"
+  }
 }
