@@ -96,6 +96,13 @@ public class ClientEvents {
             mc.setScreen(new com.sticktoslick.client.gui.SettingsScreen(mc.screen));
         }
 
+        while (ModKeyBindings.PONDER_KEY.consumeClick()) {
+            ItemStack mainHand = mc.player.getMainHandItem();
+            if (mainHand.getItem() instanceof StarterStickItem && WeaponNBTHelper.hasWeaponData(mainHand)) {
+                mc.setScreen(new WeaponUpgradeScreen(mainHand));
+            }
+        }
+
         while (ModKeyBindings.DODGE_KEY.consumeClick()) {
             ItemStack mainHand = mc.player.getMainHandItem();
             if (mainHand.getItem() instanceof StarterStickItem && WeaponNBTHelper.hasWeaponData(mainHand)) {

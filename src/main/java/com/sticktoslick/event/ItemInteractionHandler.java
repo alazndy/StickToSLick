@@ -43,36 +43,75 @@ public class ItemInteractionHandler {
         int level = WeaponNBTHelper.getLevel(stack);
         String currentClass = WeaponNBTHelper.getWeaponClass(stack);
 
+        int availablePoints = WeaponNBTHelper.getAvailableStatPoints(stack);
+
         switch (type) {
             case "damage":
-                if (consumeMaterial(player, Items.LAPIS_LAZULI)) {
+                if (availablePoints > 0 && consumeMaterial(player, Items.LAPIS_LAZULI)) {
                     WeaponNBTHelper.addStatDamage(stack, 1);
+                    WeaponNBTHelper.addSpentStatPoint(stack, 1);
                     playUpgradeEffects(player, SoundEvents.ANVIL_USE, 1.5f);
-                    player.sendSystemMessage(Component.literal("🔵 Hasar Yükseltildi!").withStyle(ChatFormatting.BLUE));
+                    player.sendSystemMessage(
+                            Component.literal("🔵 Hasar Yükseltildi! (" + (availablePoints - 1) + " Puan Kaldı)")
+                                    .withStyle(ChatFormatting.BLUE));
+                    com.sticktoslick.network.ModMessages
+                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
+                } else if (availablePoints <= 0) {
+                    player.sendSystemMessage(
+                            Component.literal("Kullanılabilir Nitelik Puanı Yok!").withStyle(ChatFormatting.RED));
+                    com.sticktoslick.network.ModMessages
+                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
                 }
                 break;
             case "speed":
-                if (consumeMaterial(player, Items.REDSTONE)) {
+                if (availablePoints > 0 && consumeMaterial(player, Items.REDSTONE)) {
                     WeaponNBTHelper.addStatAttackSpeed(stack, 1);
+                    WeaponNBTHelper.addSpentStatPoint(stack, 1);
                     playUpgradeEffects(player, SoundEvents.ANVIL_USE, 1.5f);
                     player.sendSystemMessage(
-                            Component.literal("🔴 Saldırı Hızı Yükseltildi!").withStyle(ChatFormatting.RED));
+                            Component.literal("🔴 Saldırı Hızı Yükseltildi! (" + (availablePoints - 1) + " Puan Kaldı)")
+                                    .withStyle(ChatFormatting.RED));
+                    com.sticktoslick.network.ModMessages
+                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
+                } else if (availablePoints <= 0) {
+                    player.sendSystemMessage(
+                            Component.literal("Kullanılabilir Nitelik Puanı Yok!").withStyle(ChatFormatting.RED));
+                    com.sticktoslick.network.ModMessages
+                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
                 }
                 break;
             case "movement":
-                if (consumeMaterial(player, Items.SUGAR)) {
+                if (availablePoints > 0 && consumeMaterial(player, Items.SUGAR)) {
                     WeaponNBTHelper.addStatMoveSpeed(stack, 1);
+                    WeaponNBTHelper.addSpentStatPoint(stack, 1);
                     playUpgradeEffects(player, SoundEvents.ANVIL_USE, 1.5f);
                     player.sendSystemMessage(
-                            Component.literal("⚪ Koşma Hızı Yükseltildi!").withStyle(ChatFormatting.WHITE));
+                            Component.literal("⚪ Koşma Hızı Yükseltildi! (" + (availablePoints - 1) + " Puan Kaldı)")
+                                    .withStyle(ChatFormatting.WHITE));
+                    com.sticktoslick.network.ModMessages
+                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
+                } else if (availablePoints <= 0) {
+                    player.sendSystemMessage(
+                            Component.literal("Kullanılabilir Nitelik Puanı Yok!").withStyle(ChatFormatting.RED));
+                    com.sticktoslick.network.ModMessages
+                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
                 }
                 break;
             case "knockback":
-                if (consumeMaterial(player, Items.SLIME_BALL)) {
+                if (availablePoints > 0 && consumeMaterial(player, Items.SLIME_BALL)) {
                     WeaponNBTHelper.addStatKnockback(stack, 1);
+                    WeaponNBTHelper.addSpentStatPoint(stack, 1);
                     playUpgradeEffects(player, SoundEvents.ANVIL_USE, 1.5f);
                     player.sendSystemMessage(
-                            Component.literal("🟢 Geri İtme Yükseltildi!").withStyle(ChatFormatting.GREEN));
+                            Component.literal("🟢 Geri İtme Yükseltildi! (" + (availablePoints - 1) + " Puan Kaldı)")
+                                    .withStyle(ChatFormatting.GREEN));
+                    com.sticktoslick.network.ModMessages
+                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
+                } else if (availablePoints <= 0) {
+                    player.sendSystemMessage(
+                            Component.literal("Kullanılabilir Nitelik Puanı Yok!").withStyle(ChatFormatting.RED));
+                    com.sticktoslick.network.ModMessages
+                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
                 }
                 break;
             case "evolve":

@@ -155,6 +155,27 @@ public final class WeaponNBTHelper {
         save(stack, data);
     }
 
+    // ─── Stat Points Logic ─────────────────────────────────
+
+    private static final String TAG_SPENT_STAT_POINTS = "SpentStatPoints";
+
+    public static int getSpentStatPoints(ItemStack stack) {
+        return getOrCreateTag(stack).getInt(TAG_SPENT_STAT_POINTS);
+    }
+
+    public static void addSpentStatPoint(ItemStack stack, int amount) {
+        CompoundTag data = getOrCreateTag(stack);
+        data.putInt(TAG_SPENT_STAT_POINTS, data.getInt(TAG_SPENT_STAT_POINTS) + amount);
+        save(stack, data);
+    }
+
+    public static int getAvailableStatPoints(ItemStack stack) {
+        int level = getLevel(stack);
+        int spent = getSpentStatPoints(stack);
+        // Assuming 1 point per level, minus level 1. So level 5 has 4 total points.
+        return Math.max(0, (level - 1) - spent);
+    }
+
     // ─── Enchantment Capacity ───────────────────────────────
 
     public static int getBonusEnchantCapacity(ItemStack stack) {
@@ -292,6 +313,7 @@ public final class WeaponNBTHelper {
         data.putInt(TAG_STAT_ATTACK_SPEED, 0);
         data.putInt(TAG_STAT_MOVE_SPEED, 0);
         data.putInt(TAG_STAT_KNOCKBACK, 0);
+        data.putInt(TAG_SPENT_STAT_POINTS, 0);
         data.putInt(TAG_ENCHANT_CAPACITY_BONUS, 0);
         data.putInt(TAG_TRAIT_LEVEL, 0);
         data.putInt(TAG_TOTAL_KILLS, 0);

@@ -139,12 +139,15 @@ public class WeaponUpgradeScreen extends Screen {
         int bSpd = WeaponNBTHelper.getStatAttackSpeed(weaponStack);
         int bMov = WeaponNBTHelper.getStatMoveSpeed(weaponStack);
         int bKnk = WeaponNBTHelper.getStatKnockback(weaponStack);
+        int availablePoints = WeaponNBTHelper.getAvailableStatPoints(weaponStack);
 
-        g.drawString(this.font, "§b§l⚡ Stats", sx, sy - 12, 0xFFFFFF, false);
-        drawStat(g, "Damage:", "§9+" + f(stats.baseDamage() + bDmg * 0.5f), sx, sy);
-        drawStat(g, "Speed:", "§c+" + f(stats.baseAttackSpeed() + bSpd * 0.05f), sx, sy + 15);
-        drawStat(g, "Movement:", "§f+" + bMov + "%", sx, sy + 30);
-        drawStat(g, "Knockback:", "§a+" + bKnk, sx, sy + 45);
+        g.drawString(this.font, "§b§l⚡ Nitelikler", sx, sy - 12, 0xFFFFFF, false);
+        g.drawString(this.font, "Puan: " + availablePoints, sx + 70, sy - 12, 0xFFAA00, false);
+
+        drawStat(g, "Hasar:", "§9+" + f(stats.baseDamage() + bDmg * 0.5f), sx, sy);
+        drawStat(g, "Hız:", "§c+" + f(stats.baseAttackSpeed() + bSpd * 0.05f), sx, sy + 15);
+        drawStat(g, "Hareket:", "§f+" + bMov + "%", sx, sy + 30);
+        drawStat(g, "İtme:", "§a+" + bKnk, sx, sy + 45);
 
         // 4. Trait Description
         if (trait != null) {
