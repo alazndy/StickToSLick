@@ -119,8 +119,21 @@ public class ItemInteractionHandler {
                     Item catalyst = findEvolutionCatalyst(player, currentClass, level);
                     if (catalyst != null && consumeMaterial(player, catalyst)) {
                         String targetClass = EvolutionPath.getTargetClass(currentClass, catalyst);
-                        WeaponNBTHelper.setWeaponClass(stack, targetClass);
-                        stack.setDamageValue(0);
+                        // Create new ItemStack of the correct registered item
+                        net.minecraft.world.item.ItemStack newStack = new net.minecraft.world.item.ItemStack(
+                                com.sticktoslick.item.WeaponItemRegistry.getItem(targetClass));
+                        WeaponNBTHelper.copyWeaponData(stack, newStack);
+                        WeaponNBTHelper.setWeaponClass(newStack, targetClass);
+                        newStack.setDamageValue(0);
+                        // Copy custom name if exists
+                        if (stack.hasCustomHoverName()) {
+                            newStack.setHoverName(stack.getHoverName());
+                        }
+                        // Copy enchantments
+                        net.minecraft.world.item.enchantment.EnchantmentHelper.setEnchantments(
+                                net.minecraft.world.item.enchantment.EnchantmentHelper.getEnchantments(stack),
+                                newStack);
+                        player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, newStack);
                         playUpgradeEffects(player, SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, 1.0f);
 
                         String newName = WeaponClassData.get(targetClass).displayNameKey();
@@ -134,8 +147,21 @@ public class ItemInteractionHandler {
                     if (evoOpt.isPresent()) {
                         EvolutionPath.Evolution evo = evoOpt.get();
                         if (consumeMaterial(player, evo.catalyst())) {
-                            WeaponNBTHelper.setWeaponClass(stack, evo.targetClass());
-                            stack.setDamageValue(0);
+                            // Create new ItemStack of the correct registered item
+                            net.minecraft.world.item.ItemStack newStack = new net.minecraft.world.item.ItemStack(
+                                    com.sticktoslick.item.WeaponItemRegistry.getItem(evo.targetClass()));
+                            WeaponNBTHelper.copyWeaponData(stack, newStack);
+                            WeaponNBTHelper.setWeaponClass(newStack, evo.targetClass());
+                            newStack.setDamageValue(0);
+                            // Copy custom name if exists
+                            if (stack.hasCustomHoverName()) {
+                                newStack.setHoverName(stack.getHoverName());
+                            }
+                            // Copy enchantments
+                            net.minecraft.world.item.enchantment.EnchantmentHelper.setEnchantments(
+                                    net.minecraft.world.item.enchantment.EnchantmentHelper.getEnchantments(stack),
+                                    newStack);
+                            player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, newStack);
                             playUpgradeEffects(player, SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, 1.0f);
 
                             String newName = WeaponClassData.get(evo.targetClass()).displayNameKey();

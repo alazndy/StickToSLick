@@ -80,7 +80,7 @@ public final class WeaponNBTHelper {
 
     public static String getWeaponClass(ItemStack stack) {
         CompoundTag data = getOrCreateTag(stack);
-        return data.contains(TAG_CLASS) ? data.getString(TAG_CLASS) : "starter";
+        return data.contains(TAG_CLASS) ? data.getString(TAG_CLASS) : "weapon_wooden_stick";
     }
 
     public static void setWeaponClass(ItemStack stack, String weaponClass) {
@@ -308,7 +308,7 @@ public final class WeaponNBTHelper {
         CompoundTag data = getOrCreateTag(stack);
         data.putInt(TAG_LEVEL, 1);
         data.putInt(TAG_XP, 0);
-        data.putString(TAG_CLASS, "starter");
+        data.putString(TAG_CLASS, "weapon_wooden_stick");
         data.putInt(TAG_STAT_DAMAGE, 0);
         data.putInt(TAG_STAT_ATTACK_SPEED, 0);
         data.putInt(TAG_STAT_MOVE_SPEED, 0);
