@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:blaze_rod" },
+    "title": "Karanlık Çağ",
+    "description": "Seviye 25'e ulaş — Nether güçleri uyanıyor.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "sticktoslick:iron_age",
+  "criteria": {
+    "dark_age": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": { "type": "minecraft:blaze" }
+      }
+    }
+  }
+}

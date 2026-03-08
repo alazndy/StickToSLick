@@ -1,0 +1,43 @@
+{
+  "item.sticktoslick.weapon_wooden_stick": "Başlangıç Çubuğu",
+  "item.sticktoslick.weapon_dagger": "Hafif Hançer",
+  "item.sticktoslick.weapon_shortsword": "Kısa Kılıç",
+  "item.sticktoslick.weapon_spear": "Mızrak",
+  "item.sticktoslick.weapon_club": "Sopa",
+
+  "item.sticktoslick.weapon_dirk": "Bıçak (Dirk)",
+  "item.sticktoslick.weapon_arming_sword": "Asker Kılıcı",
+  "item.sticktoslick.weapon_trident": "Üçlü Zıpkın",
+  "item.sticktoslick.weapon_mace": "Gürz",
+
+  "item.sticktoslick.weapon_saber": "Süvari Kılıcı",
+  "item.sticktoslick.weapon_longsword": "Uzun Kılıç",
+  "item.sticktoslick.weapon_lucerne_hammer": "Lucerne Çekici",
+  "item.sticktoslick.weapon_morning_star": "Sabahyıldızı",
+
+  "item.sticktoslick.weapon_katana": "Katana",
+  "item.sticktoslick.weapon_bastard_sword": "Piç Kılıç (Bastard Sword)",
+  "item.sticktoslick.weapon_halberd": "Berdüş",
+  "item.sticktoslick.weapon_warhammer": "Savaş Çekici",
+
+  "item.sticktoslick.weapon_nodachi": "Odaçi",
+  "item.sticktoslick.weapon_claymore": "İskoç İki Elli Kılıcı (Claymore)",
+  "item.sticktoslick.weapon_partisan": "Partizan Mızrağı",
+  "item.sticktoslick.weapon_great_maul": "Devasa Çekiç",
+
+  "item.sticktoslick.weapon_zweihander": "Çift Elli Kılıç (Zweihänder)",
+  "item.sticktoslick.weapon_winged_lance": "Kanatlı Mızrak (Hussar)",
+  "item.sticktoslick.weapon_executioners_axe": "Cellat Baltası",
+
+  "item.sticktoslick.weapon_dragon_slayer": "Ejderha Katili",
+  "item.sticktoslick.weapon_gungnir": "Gungnir",
+  "item.sticktoslick.weapon_void_crusher": "Boşluk Kıran",
+
+  "item.sticktoslick.weapon_genesis": "Yaratılış",
+  "item.sticktoslick.weapon_longinus": "Kader Mızrağı (Longinus)",
+  "item.sticktoslick.weapon_atlas": "Dünya Tutan (Atlas)",
+
+  "itemGroup.sticktoslick_tab": "Stick to Slick",
+  "key.categories.sticktoslick": "Stick to Slick",
+  "key.sticktoslick.ponder": "Silah İnceleme (Basılı Tut)"
+}

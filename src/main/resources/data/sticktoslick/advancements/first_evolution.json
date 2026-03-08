@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:flint" },
+    "title": "İlk Evrim",
+    "description": "Silahını ilk kez evrimleştir.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "sticktoslick:root",
+  "criteria": {
+    "first_kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": { "type": "minecraft:zombie" }
+      }
+    }
+  }
+}

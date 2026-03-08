@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "sticktoslick:item/starter_stick"
+  },
+  "overrides": [
+    { "predicate": { "sticktoslick:weapon_class": 0.01 }, "model": "sticktoslick:item/weapon_hand_axe" },
+    { "predicate": { "sticktoslick:weapon_class": 0.02 }, "model": "sticktoslick:item/weapon_spear" },
+    { "predicate": { "sticktoslick:weapon_class": 0.03 }, "model": "sticktoslick:item/weapon_club" },
+    { "predicate": { "sticktoslick:weapon_class": 0.04 }, "model": "sticktoslick:item/weapon_dagger" },
+    { "predicate": { "sticktoslick:weapon_class": 0.05 }, "model": "sticktoslick:item/weapon_battle_axe" },
+    { "predicate": { "sticktoslick:weapon_class": 0.06 }, "model": "sticktoslick:item/weapon_pike" },
+    { "predicate": { "sticktoslick:weapon_class": 0.07 }, "model": "sticktoslick:item/weapon_mace" },
+    { "predicate": { "sticktoslick:weapon_class": 0.08 }, "model": "sticktoslick:item/weapon_shortsword" },
+    { "predicate": { "sticktoslick:weapon_class": 0.09 }, "model": "sticktoslick:item/weapon_longsword" },
+    { "predicate": { "sticktoslick:weapon_class": 0.10 }, "model": "sticktoslick:item/weapon_falchion" },
+    { "predicate": { "sticktoslick:weapon_class": 0.11 }, "model": "sticktoslick:item/weapon_double_axe" },
+    { "predicate": { "sticktoslick:weapon_class": 0.12 }, "model": "sticktoslick:item/weapon_glaive" },
+    { "predicate": { "sticktoslick:weapon_class": 0.13 }, "model": "sticktoslick:item/weapon_halberd" },
+    { "predicate": { "sticktoslick:weapon_class": 0.14 }, "model": "sticktoslick:item/weapon_flail" },
+    { "predicate": { "sticktoslick:weapon_class": 0.15 }, "model": "sticktoslick:item/weapon_war_hammer" },
+    { "predicate": { "sticktoslick:weapon_class": 0.16 }, "model": "sticktoslick:item/weapon_rapier" },
+    { "predicate": { "sticktoslick:weapon_class": 0.17 }, "model": "sticktoslick:item/weapon_katana" },
+    { "predicate": { "sticktoslick:weapon_class": 0.18 }, "model": "sticktoslick:item/weapon_greatsword" },
+    { "predicate": { "sticktoslick:weapon_class": 0.19 }, "model": "sticktoslick:item/weapon_lance" },
+    { "predicate": { "sticktoslick:weapon_class": 0.20 }, "model": "sticktoslick:item/weapon_ignis_halberd" },
+    { "predicate": { "sticktoslick:weapon_class": 0.21 }, "model": "sticktoslick:item/weapon_windpiercer" },
+    { "predicate": { "sticktoslick:weapon_class": 0.22 }, "model": "sticktoslick:item/weapon_cursed_odachi" },
+    { "predicate": { "sticktoslick:weapon_class": 0.23 }, "model": "sticktoslick:item/weapon_dreadnought_axe" },
+    { "predicate": { "sticktoslick:weapon_class": 0.24 }, "model": "sticktoslick:item/weapon_excalibur" },
+    { "predicate": { "sticktoslick:weapon_class": 0.25 }, "model": "sticktoslick:item/weapon_muramasa" },
+    { "predicate": { "sticktoslick:weapon_class": 0.26 }, "model": "sticktoslick:item/weapon_void_crusher" },
+    { "predicate": { "sticktoslick:weapon_class": 0.27 }, "model": "sticktoslick:item/weapon_spear_of_heavens" }
+  ]
+}

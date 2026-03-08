@@ -1,0 +1,43 @@
+{
+  "item.sticktoslick.weapon_wooden_stick": "Starter Stick",
+  "item.sticktoslick.weapon_dagger": "Light Dagger",
+  "item.sticktoslick.weapon_shortsword": "Shortsword",
+  "item.sticktoslick.weapon_spear": "Spear",
+  "item.sticktoslick.weapon_club": "Heavy Club",
+
+  "item.sticktoslick.weapon_dirk": "Dirk",
+  "item.sticktoslick.weapon_arming_sword": "Arming Sword",
+  "item.sticktoslick.weapon_trident": "Trident",
+  "item.sticktoslick.weapon_mace": "Mace",
+
+  "item.sticktoslick.weapon_saber": "Cavalry Saber",
+  "item.sticktoslick.weapon_longsword": "Longsword",
+  "item.sticktoslick.weapon_lucerne_hammer": "Lucerne Hammer",
+  "item.sticktoslick.weapon_morning_star": "Morning Star",
+
+  "item.sticktoslick.weapon_katana": "Katana",
+  "item.sticktoslick.weapon_bastard_sword": "Bastard Sword",
+  "item.sticktoslick.weapon_halberd": "Halberd",
+  "item.sticktoslick.weapon_warhammer": "Warhammer",
+
+  "item.sticktoslick.weapon_nodachi": "Nodachi",
+  "item.sticktoslick.weapon_claymore": "Claymore",
+  "item.sticktoslick.weapon_partisan": "Partisan",
+  "item.sticktoslick.weapon_great_maul": "Great Maul",
+
+  "item.sticktoslick.weapon_zweihander": "Zweihänder",
+  "item.sticktoslick.weapon_winged_lance": "Winged Hussar Lance",
+  "item.sticktoslick.weapon_executioners_axe": "Executioner's Axe",
+
+  "item.sticktoslick.weapon_dragon_slayer": "Dragon Slayer",
+  "item.sticktoslick.weapon_gungnir": "Gungnir",
+  "item.sticktoslick.weapon_void_crusher": "Void Crusher",
+
+  "item.sticktoslick.weapon_genesis": "Genesis",
+  "item.sticktoslick.weapon_longinus": "Spear of Longinus",
+  "item.sticktoslick.weapon_atlas": "Atlas' Burden",
+
+  "itemGroup.sticktoslick_tab": "Stick to Slick",
+  "key.categories.sticktoslick": "Stick to Slick",
+  "key.sticktoslick.ponder": "Weapon Inspect (Hold)"
+}

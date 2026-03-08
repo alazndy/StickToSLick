@@ -1,0 +1,406 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Java: 17.0.13, JVM: 17.0.13+10-LTS-268 (Oracle Corporation), Arch: amd64
+
+> Task :compileJava
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:9: error: cannot find symbol
+public class EvolutionTreeScreen extends Screen {
+                                         ^
+  symbol: class Screen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:10: error: cannot find symbol
+    private final Screen parentScreen;
+                  ^
+  symbol:   class Screen
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:11: error: cannot find symbol
+    private final ItemStack currentWeapon;
+                  ^
+  symbol:   class ItemStack
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:25: error: cannot find symbol
+    public EvolutionTreeScreen(Screen parent, ItemStack currentWeapon, String currentClass) {
+                               ^
+  symbol:   class Screen
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:25: error: cannot find symbol
+    public EvolutionTreeScreen(Screen parent, ItemStack currentWeapon, String currentClass) {
+                                              ^
+  symbol:   class ItemStack
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:100: error: cannot find symbol
+    public void render(GuiGraphics g, int mouseX, int mouseY, float partialTick) {
+                       ^
+  symbol:   class GuiGraphics
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:139: error: cannot find symbol
+    private void drawConnection(GuiGraphics g, TreeConnection conn) {
+                                ^
+  symbol:   class GuiGraphics
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:155: error: cannot find symbol
+    private void drawNode(GuiGraphics g, TreeNode node, boolean isCurrent) {
+                          ^
+  symbol:   class GuiGraphics
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:167: error: cannot find symbol
+    private void renderNodeTooltip(GuiGraphics g, TreeNode node, int mouseX, int mouseY) {
+                                   ^
+  symbol:   class GuiGraphics
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:237: error: cannot find symbol
+        ItemStack catalyst;
+        ^
+  symbol:   class ItemStack
+  location: class TreeConnection
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:239: error: cannot find symbol
+        TreeConnection(TreeNode parent, TreeNode child, ItemStack catalyst) {
+                                                        ^
+  symbol:   class ItemStack
+  location: class TreeConnection
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:224: error: cannot find symbol
+        ItemStack displayItem;
+        ^
+  symbol:   class ItemStack
+  location: class TreeNode
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:226: error: cannot find symbol
+        TreeNode(String weaponClass, int x, int y, ItemStack displayItem) {
+                                                   ^
+  symbol:   class ItemStack
+  location: class TreeNode
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:16: error: cannot find symbol
+    private final ItemStack weaponStack;
+                  ^
+  symbol:   class ItemStack
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:26: error: cannot find symbol
+    private ItemStack animatingItem = ItemStack.EMPTY;
+            ^
+  symbol:   class ItemStack
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:30: error: cannot find symbol
+    public WeaponUpgradeScreen(ItemStack stack) {
+                               ^
+  symbol:   class ItemStack
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:32: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:34: error: cannot find symbol
+        super.init();
+        ^
+  symbol:   variable super
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:40: error: cannot find symbol
+                scrollX = this.width / 2.0 - node.x;
+                              ^
+  symbol: variable width
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:41: error: cannot find symbol
+                scrollY = this.height / 2.0 - node.y;
+                              ^
+  symbol: variable height
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:48: error: cannot find symbol
+                net.minecraft.client.gui.components.Button.builder(Component.literal("? Geri D÷n"), b -> {
+                                                                   ^
+  symbol:   variable Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:49: error: cannot find symbol
+                    Minecraft.getInstance().setScreen(parentScreen);
+                    ^
+  symbol:   variable Minecraft
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:63: error: cannot find symbol
+        TreeNode root = new TreeNode("starter", startX, centerY, new ItemStack(Items.STICK));
+                                                                     ^
+  symbol:   class ItemStack
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:63: error: cannot find symbol
+        TreeNode root = new TreeNode("starter", startX, centerY, new ItemStack(Items.STICK));
+                                                                               ^
+  symbol:   variable Items
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:70: error: package EvolutionPath does not exist
+        List<EvolutionPath.Evolution> evolutions = EvolutionPath.getEvolutions(parent.weaponClass);
+                          ^
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:70: error: cannot find symbol
+        List<EvolutionPath.Evolution> evolutions = EvolutionPath.getEvolutions(parent.weaponClass);
+                                                   ^
+  symbol:   variable EvolutionPath
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:81: error: package EvolutionPath does not exist
+            EvolutionPath.Evolution evo = evolutions.get(i);
+                         ^
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:88: error: cannot find symbol
+            ItemStack displayItem = new ItemStack(Items.IRON_SWORD); // We'd ideally pull the proper item for the class
+            ^
+  symbol:   class ItemStack
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:88: error: cannot find symbol
+            ItemStack displayItem = new ItemStack(Items.IRON_SWORD); // We'd ideally pull the proper item for the class
+                                        ^
+  symbol:   class ItemStack
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:88: error: cannot find symbol
+            ItemStack displayItem = new ItemStack(Items.IRON_SWORD); // We'd ideally pull the proper item for the class
+                                                  ^
+  symbol:   variable Items
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:93: error: cannot find symbol
+            connections.add(new TreeConnection(parent, child, new ItemStack(evo.catalyst())));
+                                                                  ^
+  symbol:   class ItemStack
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:99: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:128: error: cannot find symbol
+        g.drawCenteredString(this.font, "ğ6ğlS¦LAH EVR¦M AºACI", this.width / 2, 10, 0xFFFFFF);
+                                 ^
+  symbol: variable font
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:128: error: cannot find symbol
+        g.drawCenteredString(this.font, "ğ6ğlS¦LAH EVR¦M AºACI", this.width / 2, 10, 0xFFFFFF);
+                                                                     ^
+  symbol: variable width
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:129: error: cannot find symbol
+        g.drawCenteredString(this.font, "ğ7Kayd²rmak iin s³r³kle", this.width / 2, 25, 0xAAAAAA);
+                                 ^
+  symbol: variable font
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:129: error: cannot find symbol
+        g.drawCenteredString(this.font, "ğ7Kayd²rmak iin s³r³kle", this.width / 2, 25, 0xAAAAAA);
+                                                                        ^
+  symbol: variable width
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:136: error: cannot find symbol
+        super.render(g, mouseX, mouseY, partialTick);
+        ^
+  symbol:   variable super
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:168: error: package WeaponClassData does not exist
+        WeaponClassData.WeaponStats stats = WeaponClassData.get(node.weaponClass);
+                       ^
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:168: error: cannot find symbol
+        WeaponClassData.WeaponStats stats = WeaponClassData.get(node.weaponClass);
+                                            ^
+  symbol:   variable WeaponClassData
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:169: error: cannot find symbol
+        List<Component> tooltip = new ArrayList<>();
+             ^
+  symbol:   class Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:171: error: cannot find symbol
+        tooltip.add(Component.translatable(stats.displayNameKey()).withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD));
+                                                                             ^
+  symbol:   variable ChatFormatting
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:171: error: cannot find symbol
+        tooltip.add(Component.translatable(stats.displayNameKey()).withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD));
+                                                                                                  ^
+  symbol:   variable ChatFormatting
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:171: error: cannot find symbol
+        tooltip.add(Component.translatable(stats.displayNameKey()).withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD));
+                    ^
+  symbol:   variable Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:172: error: cannot find symbol
+        tooltip.add(Component.literal("S²n²f: " + node.weaponClass).withStyle(ChatFormatting.DARK_GRAY));
+                                                                              ^
+  symbol:   variable ChatFormatting
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:172: error: cannot find symbol
+        tooltip.add(Component.literal("S²n²f: " + node.weaponClass).withStyle(ChatFormatting.DARK_GRAY));
+                    ^
+  symbol:   variable Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:173: error: cannot find symbol
+        tooltip.add(Component.empty());
+                    ^
+  symbol:   variable Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:174: error: cannot find symbol
+        tooltip.add(Component.literal("? Hasar: ").withStyle(ChatFormatting.BLUE)
+                                                             ^
+  symbol:   variable ChatFormatting
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:174: error: cannot find symbol
+        tooltip.add(Component.literal("? Hasar: ").withStyle(ChatFormatting.BLUE)
+                    ^
+  symbol:   variable Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:175: error: cannot find symbol
+                .append(Component.literal(String.valueOf(stats.baseDamage())).withStyle(ChatFormatting.WHITE)));
+                                                                                        ^
+  symbol:   variable ChatFormatting
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:175: error: cannot find symbol
+                .append(Component.literal(String.valueOf(stats.baseDamage())).withStyle(ChatFormatting.WHITE)));
+                        ^
+  symbol:   variable Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:176: error: cannot find symbol
+        tooltip.add(Component.literal("? H²z: ").withStyle(ChatFormatting.RED)
+                                                           ^
+  symbol:   variable ChatFormatting
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:176: error: cannot find symbol
+        tooltip.add(Component.literal("? H²z: ").withStyle(ChatFormatting.RED)
+                    ^
+  symbol:   variable Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:177: error: cannot find symbol
+                .append(Component.literal(String.valueOf(stats.baseAttackSpeed())).withStyle(ChatFormatting.WHITE)));
+                                                                                             ^
+  symbol:   variable ChatFormatting
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:177: error: cannot find symbol
+                .append(Component.literal(String.valueOf(stats.baseAttackSpeed())).withStyle(ChatFormatting.WHITE)));
+                        ^
+  symbol:   variable Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:178: error: cannot find symbol
+        tooltip.add(Component.literal("? Dayan²kl²l²k: ").withStyle(ChatFormatting.DARK_RED)
+                                                                    ^
+  symbol:   variable ChatFormatting
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:178: error: cannot find symbol
+        tooltip.add(Component.literal("? Dayan²kl²l²k: ").withStyle(ChatFormatting.DARK_RED)
+                    ^
+  symbol:   variable Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:179: error: cannot find symbol
+                .append(Component.literal(String.valueOf(stats.maxDurability())).withStyle(ChatFormatting.WHITE)));
+                                                                                           ^
+  symbol:   variable ChatFormatting
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:179: error: cannot find symbol
+                .append(Component.literal(String.valueOf(stats.maxDurability())).withStyle(ChatFormatting.WHITE)));
+                        ^
+  symbol:   variable Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:180: error: cannot find symbol
+        tooltip.add(Component.literal("? B³y³ Kapasitesi: ").withStyle(ChatFormatting.LIGHT_PURPLE)
+                                                                       ^
+  symbol:   variable ChatFormatting
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:180: error: cannot find symbol
+        tooltip.add(Component.literal("? B³y³ Kapasitesi: ").withStyle(ChatFormatting.LIGHT_PURPLE)
+                    ^
+  symbol:   variable Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:181: error: cannot find symbol
+                .append(Component.literal(String.valueOf(stats.enchantSlots())).withStyle(ChatFormatting.WHITE)));
+                                                                                          ^
+  symbol:   variable ChatFormatting
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:181: error: cannot find symbol
+                .append(Component.literal(String.valueOf(stats.enchantSlots())).withStyle(ChatFormatting.WHITE)));
+                        ^
+  symbol:   variable Component
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:183: error: cannot find symbol
+        g.renderTooltip(this.font, tooltip, java.util.Optional.empty(), mouseX, mouseY);
+                            ^
+  symbol: variable font
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:186: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:193: error: cannot find symbol
+        return super.mouseClicked(mouseX, mouseY, button);
+               ^
+  symbol:   variable super
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:196: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:201: error: cannot find symbol
+        return super.mouseReleased(mouseX, mouseY, button);
+               ^
+  symbol:   variable super
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:204: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:213: error: cannot find symbol
+        return super.mouseDragged(mouseX, mouseY, button, dragX, dragY);
+               ^
+  symbol:   variable super
+  location: class EvolutionTreeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\EvolutionTreeScreen.java:216: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:26: error: cannot find symbol
+    private ItemStack animatingItem = ItemStack.EMPTY;
+                                      ^
+  symbol:   variable ItemStack
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:50: error: cannot find symbol
+                b -> startAnimation("damage", Items.LAPIS_LAZULI, b.getX(), b.getY()))
+                                              ^
+  symbol:   variable Items
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:54: error: cannot find symbol
+                b -> startAnimation("speed", Items.REDSTONE, b.getX(), b.getY()))
+                                             ^
+  symbol:   variable Items
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:58: error: cannot find symbol
+                b -> startAnimation("movement", Items.SUGAR, b.getX(), b.getY()))
+                                                ^
+  symbol:   variable Items
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:62: error: cannot find symbol
+                b -> startAnimation("knockback", Items.SLIME_BALL, b.getX(), b.getY()))
+                                                 ^
+  symbol:   variable Items
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:66: error: cannot find symbol
+        ItemStack traitMat = new ItemStack(trait.upgradeMaterial());
+        ^
+  symbol:   class ItemStack
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:66: error: cannot find symbol
+        ItemStack traitMat = new ItemStack(trait.upgradeMaterial());
+                                 ^
+  symbol:   class ItemStack
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:83: error: cannot find symbol
+                                .append(new ItemStack(evo.catalyst()).getHoverName())
+                                            ^
+  symbol:   class ItemStack
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:92: error: incompatible types: EvolutionTreeScreen cannot be converted to Screen
+            Minecraft.getInstance().setScreen(new EvolutionTreeScreen(this, weaponStack, weaponClass));
+                                              ^
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:100: error: cannot find symbol
+        this.animatingItem = new ItemStack(item);
+                                 ^
+  symbol:   class ItemStack
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:178: error: cannot find symbol
+                int ax = (int) Mth.lerp(animationProgress, startX, cx);
+                               ^
+  symbol:   variable Mth
+  location: class WeaponUpgradeScreen
+C:\Users\turha\Desktop\SticktoSlick\src\main\java\com\sticktoslick\client\gui\WeaponUpgradeScreen.java:179: error: cannot find symbol
+                int ay = (int) Mth.lerp(animationProgress, startY, cy + 20);
+                               ^
+  symbol:   variable Mth
+  location: class WeaponUpgradeScreen
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+82 errors
+
+> Task :compileJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 13s
+1 actionable task: 1 executed

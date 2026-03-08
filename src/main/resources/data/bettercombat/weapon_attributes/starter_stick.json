@@ -1,0 +1,22 @@
+{
+  "attack_range": 3.0,
+  "pose": "bettercombat:pose_sword",
+  "two_handed": false,
+  "category": "sword",
+  "attacks": [
+    {
+      "animation": "bettercombat:sword_slash_right",
+      "swing_sound": { "id": "minecraft:entity.player.attack.sweep", "volume": 0.5, "pitch": 0.8 },
+      "damage_modifier": 1.0,
+      "angle": 60,
+      "impact_sound": "minecraft:entity.player.attack.strong"
+    },
+    {
+      "animation": "bettercombat:sword_slash_left",
+      "swing_sound": { "id": "minecraft:entity.player.attack.sweep", "volume": 0.5, "pitch": 1.0 },
+      "damage_modifier": 1.0,
+      "angle": 60,
+      "impact_sound": "minecraft:entity.player.attack.strong"
+    }
+  ]
+}

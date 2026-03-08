@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:nether_star" },
+    "title": "Efsane Doğuyor",
+    "description": "Efsanevi bir silaha ulaş — Tanrılar seni izliyor.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "sticktoslick:dark_age",
+  "criteria": {
+    "legendary": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": { "type": "minecraft:wither" }
+      }
+    }
+  }
+}
