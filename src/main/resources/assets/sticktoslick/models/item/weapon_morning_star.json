@@ -1,6 +1,45 @@
 {
-  "parent": "item/handheld",
+  "parent": "minecraft:item/handheld",
   "textures": {
     "layer0": "sticktoslick:item/weapon_morning_star"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, -90, 55],
+      "translation": [0, 7.1, 0.5],
+      "scale": [1.78, 1.78, 0.89]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, 90, -55],
+      "translation": [0, 7.1, 0.5],
+      "scale": [1.78, 1.78, 0.89]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, -90, 25],
+      "translation": [1.13, 3.2, 1.13],
+      "scale": [1.32, 1.32, 0.71]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 90, -25],
+      "translation": [1.13, 3.2, 1.13],
+      "scale": [1.32, 1.32, 0.71]
+    },
+    "ground": {
+      "translation": [0, 4, 0],
+      "scale": [1, 1, 0.5]
+    },
+    "gui": {
+      "translation": [1.333, 1.333, 0],
+      "scale": [1.58, 1.58, 1]
+    },
+    "head": {
+      "translation": [4.25, 4.25, 0],
+      "scale": [3.37, 3.37, 1]
+    },
+    "fixed": {
+      "rotation": [0, -180, 0],
+      "translation": [0, 0, 0],
+      "scale": [2, 2, 1]
+    }
   }
 }

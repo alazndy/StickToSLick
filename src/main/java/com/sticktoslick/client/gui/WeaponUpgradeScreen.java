@@ -102,7 +102,13 @@ public class WeaponUpgradeScreen extends Screen {
 
     private void sendUpgrade() {
         ModMessages.sendToServer(new C2SUpgradeWeaponPacket(pendingUpgrade, pendingExtraData));
-        this.onClose();
+        // Only close the screen for evolution (item swap happens server-side)
+        if ("evolve".equals(pendingUpgrade)) {
+            this.onClose();
+        } else {
+            // For stat upgrades, just refresh the widgets without closing
+            this.rebuildWidgets();
+        }
     }
 
     @Override

@@ -54,13 +54,9 @@ public class ItemInteractionHandler {
                     player.sendSystemMessage(
                             Component.literal("🔵 Hasar Yükseltildi! (" + (availablePoints - 1) + " Puan Kaldı)")
                                     .withStyle(ChatFormatting.BLUE));
-                    com.sticktoslick.network.ModMessages
-                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
                 } else if (availablePoints <= 0) {
                     player.sendSystemMessage(
                             Component.literal("Kullanılabilir Nitelik Puanı Yok!").withStyle(ChatFormatting.RED));
-                    com.sticktoslick.network.ModMessages
-                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
                 }
                 break;
             case "speed":
@@ -71,13 +67,9 @@ public class ItemInteractionHandler {
                     player.sendSystemMessage(
                             Component.literal("🔴 Saldırı Hızı Yükseltildi! (" + (availablePoints - 1) + " Puan Kaldı)")
                                     .withStyle(ChatFormatting.RED));
-                    com.sticktoslick.network.ModMessages
-                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
                 } else if (availablePoints <= 0) {
                     player.sendSystemMessage(
                             Component.literal("Kullanılabilir Nitelik Puanı Yok!").withStyle(ChatFormatting.RED));
-                    com.sticktoslick.network.ModMessages
-                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
                 }
                 break;
             case "movement":
@@ -88,13 +80,9 @@ public class ItemInteractionHandler {
                     player.sendSystemMessage(
                             Component.literal("⚪ Koşma Hızı Yükseltildi! (" + (availablePoints - 1) + " Puan Kaldı)")
                                     .withStyle(ChatFormatting.WHITE));
-                    com.sticktoslick.network.ModMessages
-                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
                 } else if (availablePoints <= 0) {
                     player.sendSystemMessage(
                             Component.literal("Kullanılabilir Nitelik Puanı Yok!").withStyle(ChatFormatting.RED));
-                    com.sticktoslick.network.ModMessages
-                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
                 }
                 break;
             case "knockback":
@@ -105,13 +93,9 @@ public class ItemInteractionHandler {
                     player.sendSystemMessage(
                             Component.literal("🟢 Geri İtme Yükseltildi! (" + (availablePoints - 1) + " Puan Kaldı)")
                                     .withStyle(ChatFormatting.GREEN));
-                    com.sticktoslick.network.ModMessages
-                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
                 } else if (availablePoints <= 0) {
                     player.sendSystemMessage(
                             Component.literal("Kullanılabilir Nitelik Puanı Yok!").withStyle(ChatFormatting.RED));
-                    com.sticktoslick.network.ModMessages
-                            .sendToPlayer(new com.sticktoslick.network.S2COpenUpgradeScreenPacket(), player);
                 }
                 break;
             case "evolve":

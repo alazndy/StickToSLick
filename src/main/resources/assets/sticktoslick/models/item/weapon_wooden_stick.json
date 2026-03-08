@@ -1,6 +1,45 @@
 {
-  "parent": "item/handheld",
+  "parent": "minecraft:item/handheld",
   "textures": {
     "layer0": "sticktoslick:item/weapon_wooden_stick"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, -90, 55],
+      "translation": [0, 5.15, 0.5],
+      "scale": [1.19, 1.19, 0.6]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, 90, -55],
+      "translation": [0, 5.15, 0.5],
+      "scale": [1.19, 1.19, 0.6]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, -90, 25],
+      "translation": [1.13, 3.2, 1.13],
+      "scale": [0.88, 0.88, 0.48]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 90, -25],
+      "translation": [1.13, 3.2, 1.13],
+      "scale": [0.88, 0.88, 0.48]
+    },
+    "ground": {
+      "translation": [0, 4, 0],
+      "scale": [1, 1, 0.5]
+    },
+    "gui": {
+      "translation": [-0.666, -0.666, 0],
+      "scale": [1.05, 1.05, 1]
+    },
+    "head": {
+      "translation": [4.25, 4.25, 0],
+      "scale": [3.37, 3.37, 1]
+    },
+    "fixed": {
+      "rotation": [0, -180, 0],
+      "translation": [0, 0, 0],
+      "scale": [2, 2, 1]
+    }
   }
 }
